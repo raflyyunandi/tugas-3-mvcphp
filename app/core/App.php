@@ -11,6 +11,8 @@ class App{
 
 		if (isset($_GET['url'])){
 		$url = $_GET['url'];
+		$url = filter_var($url,FILTER_SANITAZE_URL);
+		$url = explode('/', $url);
 		return $url;
 		}
 	}
