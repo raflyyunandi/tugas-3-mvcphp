@@ -6,21 +6,24 @@
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-6">
+
+		<div class="col-4 " >
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">Tambah data Mahasiswa
 </button>
 			<h3>Daftar Mahasiswa</h3>
 			<?php foreach ($data['mhs'] as $key ) : ?>
 				<ul class="list-group">
-					<li class="list-group-item d-flex justify-content-between align-items-center"><?= $key['nama']; ?> 
-					<a href="<?= BASEURL; ?>/mahasiswa/detail/<?= $key['id']; ?>" class="badge badge-primary"> detail</a> 
+					<li class="list-group-item"><?= $key['nama']; ?> 
+					<a href="<?= BASEURL; ?>/mahasiswa/detail/<?= $key['id']; ?>" class="badge badge-pill badge-success float-right ml-1 p-2" > detail</a> 
+					<a href="<?= BASEURL; ?>/mahasiswa/hapus/<?= $key['id']; ?>"  class="badge badge-pill badge-danger float-right ml-1 p-2" onclick="return confirm('Ingin hapus data mahasiswa?')"> hapus</a> 
+                    </li>
 					</li>
 				</ul>
 			<?php endforeach; ?>
 		</div>
 	</div>
 </div> 
+
 
 <!-- Modal -->
 <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="judulModal" aria-hidden="true">
@@ -67,6 +70,7 @@
 	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 	        <button type="submit" class="btn btn-primary">Tambah Data</button>
 	       	</form>
+
 <!-- <div class="Container mt-5">
 	<div class="row">
 		<div class="col-6">
