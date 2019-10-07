@@ -1,10 +1,9 @@
 <?php 
 
-class Home {
-	public function index(){
-		echo 'home/index';
+	class Home {
+		public function index(){
+			echo "Home/Index";
+		}	
 	}
-}
-
 
  ?>
