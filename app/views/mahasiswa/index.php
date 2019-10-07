@@ -27,7 +27,7 @@
 	      </div>
 	      <div class="modal-body">
 
-	      <form action="<?= BASEURL; ?>/mahasiswa/tambah" method="">
+	      <form action="<?= BASEURL; ?>/mahasiswa/tambah" method="POST">
 			  
 			  <div class="form-group">
 			    <label for="nama">Nama</label>
@@ -44,21 +44,23 @@
 			    <input type="email" class="form-control" id="email" name="email" laceholder="masukan email">
 			  </div>
 
-			  
+
 	        <div class="form-group">
 		    <label for="jurusan">Jurusan</label>
-		    <select class="form-control" id="jurusan">
+		    <select class="form-control" id="jurusan" name="jurusan">
 		      <option value="Teknik Informatika">Teknik Informatika</option>
 		      <option value="Teknik Mesin">Teknik Mesin</option>
 		      <option value="Teknik Pangan">Teknik Pangan</option>
-		      <option value="Teknik Planologi">Teknik Planologi</option>
+		      <option value="Teknik Teknik Perencanaan & Wilayah Kota
+">Teknik Perencanaan & Wilayah Kota
+</option>
 		      <option value="Teknik Lingkungan">Teknik Lingkungan</option>
 		    </select>
 			</div>
 
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Tambah Data</button>
+	        <button type="submit" class="btn btn-primary">Tambah Data</button>
 	       	</form>
 <!-- <div class="Container mt-5">
 	<div class="row">
