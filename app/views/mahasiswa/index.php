@@ -1,4 +1,11 @@
 <div class="Container mt-5">
+
+	<div class="eow">
+		<div class="col-lg-6">
+			<?php Flasher::flash(); ?>
+		</div>
+	</div>
+
 	<div class="row">
 		<div class="col-6">
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">Tambah data Mahasiswa
