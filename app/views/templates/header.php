@@ -4,7 +4,11 @@
 	<meta charset="UTF-8">
 	<title> Halaman <?= $data['judul']; ?></title>
 	<link rel="stylesheet" type="text/css" href="<?= BASEURL; ?>/css/bootstrap.css">
-	<script type="text/javascript" src="<?= BASEURL; ?>/js/bootstrap.js"></script>
+	<script src="<?= BASEURL; ?>/js/jquery-3.4.1.js" ></script>
+  <script src="<?= BASEURL; ?>/js/bootstrap.min.js"></script>
+  <script src="<?= BASEURL; ?>/js/bootstrap.js"></script>
+  <script src="<?= BASEURL; ?>/js/script.js"></script>
+
 </head>
 <body>
 
