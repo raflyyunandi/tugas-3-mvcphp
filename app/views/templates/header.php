@@ -22,6 +22,9 @@
       <li class="nav-item">
         <a class="nav-link" href="<?= BASEURL; ?>">About</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?= BASEURL; ?>">Mahasiswa</a>
+      </li>
     
       <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">173040028</a>
