@@ -1,11 +1,25 @@
 <div class="Container mt-5">
 
-	<div class="eow">
+	<div class="row">
 		<div class="col-lg-6">
 			<?php Flasher::flash(); ?>
 		</div>
 	</div>
 
+<div class="row">
+	<div class="col-lg-12">
+        <div class="col-lg-4">            
+            <form action="<?= BASEURL; ?>/mahasiswa/cari" method="post">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Cari Mahasiswa" name="keyword" id="keyword" autocomplete="off">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="submit" id="tombolCari">Cari</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 		<div class="col-4 " >
 			<button type="button" class="btn btn-primary tombolTambahData" data-toggle="modal" data-target="#formModal">Tambah data Mahasiswa </button>
